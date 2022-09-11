@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+:root{
+  --darkblue:#0c377c;
+  --darker: #041737;
+  --light:#EEE;
+  --red: #cd1e11;
+  --darkred: rgba(206, 16, 16, 0.619);
+  --yellow: rgb(212, 215, 14);
+
+  
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'Rubik', sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: var(--darkblue);
+  color: #FFF;
+}
+
+header{
+  padding: 2rem rem;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header h1{
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: whitesmoke;
+  margin-bottom: 1rem;
+}
+
+#new-task-form{
+  display: flex;
+}
+
+input, button{
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+#new-task-input{
+  flex: 1 1 0%;
+  background-color: var(--light);
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-right: 1rem;
+  color: var(--darker);
+  font-size: 1.25rem;
+}
+
+#new-task-submit{
+  color: var(--light);
+  font-size: 1.25rem;
+  font-weight: 700;
+  outline: solid rgba(91, 165, 16, 0.742);
+  border-radius: 15em;
+  background-color: rgba(91, 165, 16, 0.742);
+  cursor: pointer;
+
+}
+
+#new-task-sumbit:hover{
+  opacity: 10.8;
+}
+
+main {
+  flex: 1 1 0%;
+  padding: 2rem, 1rem;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.task-list {
+  padding: 1rem;
+}
+
+.task-list h2 {
+  font-size:1.5rem;
+  font-weight: 300;
+  color: whitesmoke;
+  margin-bottom: 1rem;
+}
+
+#tasks .tasks{
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--darker);
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+main{
+  margin-top: 30px;
+}
+
+.tasks{
+  margin-top: 30px;
+}
+
+#tasks .tasks .content .text{
+  color:var(--light);
+  font-size: 1.125rem;
+  width: 100%;
+  display: block;
+}
+
+#tasks .tasks .content .text:not(:read-only){
+  color:chartreuse;
+}
+
+#tasks .tasks .actions {
+  display: flex;
+  margin: 0 -0.5rem;
+}
+
+.tasks .actions button{
+  cursor: pointer;
+  margin: 0 0.5rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  
+}
+
+.tasks .actions .done{
+  color: chartreuse
+}
+.tasks .actions .edit{
+  color: var(--yellow)
+}
+
+.tasks .actions .delete{
+  color:crimson;
+}
+
+
+/* Для выполненной таски */
+
+.tasks-done{
+  display: flex;
+  justify-content: space-between;
+  background-color: gray;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+.tasks-done{
+  margin-top: 30px;
+}
+
+.text-done{
+  color: rgb(233, 232, 232);
+  font-size: 1.125rem;
+  text-decoration: line-through;
+  width: 100%;
+  display: block;
+}
+
+.text-done:not(:read-only){
+  color:chartreuse;
+}
+
+.actions-done {
+  display: flex;
+  margin: 0 -0.5rem;
+}
+
+/* .tasks-done .actions-done button{
+  cursor: pointer;
+  margin: 0 0.5rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  
+} */
+
+.done-done{
+  cursor: pointer;
+  margin: 0 0.5rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: chartreuse
+}
+.edit-done{
+  cursor: pointer;
+  margin: 0 0.5rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  
+  color: var(--yellow)
+}
+
+.delete-done{
+  cursor: pointer;
+  margin: 0 0.5rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  
+  color:crimson;
+}
+
